@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="test many for many" max_length="40" name="x_58872_needit_test_many_for_many" type="collection">
+        <element label="Group" max_length="32" name="group_name" reference="x_58872_needit_group" type="reference"/>
+        <element label="user" max_length="32" name="user_id" reference="x_58872_needit_user" type="reference"/>
+        <index name="index">
+            <element name="group_name"/>
+        </index>
+        <index name="index2">
+            <element name="user_id"/>
+        </index>
+    </element>
+</database>
